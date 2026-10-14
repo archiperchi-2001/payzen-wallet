@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PayZen Wallet</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 40px;">
+  <h1>PayZen Wallet</h1>
+  <h2>Smart Budgeting</h2>
+  <p>Track your spending, get AI-based saving tips, and see weekly summaries.</p>
+
+  <button onclick="firebase.analytics().logEvent('feature_activation', {feature: 'Smart Budgeting'})">Activate Smart Budgeting</button>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "PASTE_HERE",
+      authDomain: "PASTE_HERE",
+      projectId: "PASTE_HERE",
+      storageBucket: "PASTE_HERE",
+      messagingSenderId: "PASTE_HERE",
+      appId: "PASTE_HERE",
+      measurementId: "PASTE_HERE"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</body>
+</html>
 
